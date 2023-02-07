@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+}
+.banner{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(./image/head.webp);
+background-size: cover; 
+background-position: center;
+}
+.banner .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.logo:hover{
+    transform: scale(1.7);
+    z-index:2;
+} 
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li a::after{
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5;
+} 
+.navbar ul button{
+    width: 100px;
+    padding: 15px 0;
+    text-align: center;
+    margin: -15px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #ffe044 ;
+    background-color: transparent; 
+    color: #ffe044;
+    cursor: pointer;
+}
+.navbar ul button:hover{
+    color:  #fff;
+    border: 2px solid  #fff;
+   
+    
+}
+.navbar ul li a:hover::after{
+    
+    width: 100%;
+}
+.navbar ul li a:hover{
+    color:  #ffe044 ;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:transalatey(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+.content h1{
+    font-size: 70px;
+    margin-top: -100px;
+}
+.content a{
+    margin-top: -100px;
+}
+.content a:hover{
+    color: #fff;
+    margin-top: -100px;
+}
+body,html{
+    overflow-x: hidden;
+}
+/* forms */
+.form{
+    background-color: rgb(225, 223, 223);
+    height: 70px;
+    width: 75%;
+    margin-top: -35px;
+    margin-left: 13%;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow:20px 20px 50px grey;
+
+}
+.inputform{
+    height: 50px;
+    width: 500px;
+    margin-left: 58px;
+    margin-top: 1.5px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.inputform1{
+    height: 50px;
+    width: 300px;
+    margin-left: 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.inputbtn1 {
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: #ffe044;
+    border: 2px solid #ffe044;
+    border-radius: 10px;
+}
+.inputbtn1:hover {
+    background-color: transparent;
+    border: 2px solid #1f115d;
+    color: #1f115d;
+
+}
+/* events */
+section{
+    width: 90%;
+    margin: 80px auto;
+}
+.title{
+    text-align: left;
+    font-size: 4vmin;
+    color:  #000000 ;
+}
+a{
+    text-decoration: none;
+    color: #ffe044;
+}
+.line{
+    width:150px;
+    height: 4px;
+    background-color: red;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+.line1{
+    width:200px;
+    height: 4px;
+    background-color: red;
+   
+    border-radius: 5px;
+}
+/* trending tourist destinations */
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;   
+    margin: 50px 0;
+    transition: 1s;   
+}
+.row .col {
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    margin: 0 10px;
+}
+.image{
+    display: block;
+    height: 400px;
+    width: 300px;
+    border-radius:5px;
+    border: 2px solid #868282;
+}
+.image:hover{
+   transform: scale(1.1);
+   z-index:2;    
+}
+.link {
+    text-align: right;
+    text-decoration: none;  
+}
+.link a{
+    color: #1f115d;
+    text-decoration: dotted;
+   
+}
+.link a:hover{
+    color: #a08b20;
+}
+.events .row{
+    margin-top: 50px;
+
+}
+.events h6 {
+    font-size: 2vmin;
+    color: rgb(83, 83, 83);
+    margin: 0px auto;
+    padding: 0px 40px;
+}
+.events h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+}
+.events h4:hover {
+    font-size: 3vmin;
+    color: #a08b20;
+    margin: 20px auto;
+}
+.events p{
+    color: rgb(0, 0, 0);
+    padding: 0px 40px;
+     
+}
+.events .icon{
+   margin-top: 10px;
+    color: yellow;
+}
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(15, 6, 118, 0.75),rgba(15,6,118,0.75)),url(./image/backgd2\ copy\ 2.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+.explore-content{
+   width: 60%;
+   padding: 50px;
+   padding: auto;
+   display: flex;
+   align-items: center;
+   flex-direction: column; 
+}
+.explore-content h1{
+    font-size: 7vmin;
+    text-align: left;
+    color: #fff;
+    margin: 10px;
+    text-shadow:2px 2px #ffe044;
+   
+}
+.explore-content p{
+    color: rgb(233, 228, 228);
+    text-align: left;
+    margin: 10px;
+}
+.explore-content ul {
+    font-size: 3.5vmin;
+    text-align: left;
+    color: #fff;
+    margin: 20px;
+}
+.explore-content ul i {
+    color: #ffe044;
+    margin-right:15px;
+    text-shadow: 2px 2px #fff;
+}
+.explore-content ul p{
+    font-size: 2vmin;
+    margin: 10px;
+    color: rgb(233, 228, 228);
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width:60% ;
+}
+.tour .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+   
+    
+}
+.image-gallery img{
+   max-width: 200px;
+    height: 250px;
+    margin: 10px ;
+    border-radius: 5px;
+
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+.btn a{
+    text-align: center;
+    color: #1f115d;
+    text-decoration: double;
+}
+
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+    text-align: left;
+    letter-spacing: 1px;
+    
+}
+.content-col button{
+    margin-left: -100p;
+    width: 150px;
+    height: 30px;
+    background-color: #ffe044;
+    border: #ffe044;
+    border-radius: 10px;
+    text-align: center;
+    color: #1f115d;
+    background-color: transparent; 
+}
+.content-col button:hover{
+     background-color: #ffe044;; 
+}
+.getin {
+    text-align: center;
+    margin: 10px auto;
+    padding: 0;
+}
+.getin h1{
+    font-size: 5vmin;
+    color: #000000;
+
+}
+.getin p{
+    margin-top: 20px;
+    color: #484872;
+}
+.getin button{
+  background-color: #ffe044;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+}
+.getin button:hover{
+    background-color:#1f115d;
+    color: #fff; 
+    transform: scale(1.03);
+    z-index:2;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;   
+}
+.traveltiltle{
+    text-align: left;
+    font-size: 3vmin;
+    color: #24262b;
+}
+.traveltiltle.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;    
+}
+.row .col1 {
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+}
+
+.image1{
+    height: 150px;
+    width: 200px;   
+}
+
+.link1 {
+     text-align: right;  
+}
+.link1 a{
+    text-decoration: double;
+    color: #1f115d;
+
+}
+.link1 a:hover{
+    color: #a08b20;
+}
+.col-style{
+    border: 1px dotted rgb(192, 192, 192);
+   
+}
+.col-style:hover{
+    transform: scale(1.3);
+    z-index:2;
+    
+
+}
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    
+}
+.footer-col h4{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+.footer-col ul li p{
+    
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+    margin: 5px auto;
+}
+.footer-col ul li .inputf{
+    height: 30px;
+    width: 150px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+}
+.footer-col ul li button{
+    color: #000000;
+    background-color: #ffe044;
+    border: 2px solid #ffe044;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    margin: 5px;
+
+}
+.footer-col ul li button:hover{
+    background-color: transparent;
+    color: #ffe044;
+    transform: scale(1.1);
+    z-index:2;
+}
+
+
+.footer-col ul li a{
+    text-transform: capitalize;
+    font-size: 16px;
+    color:#fff;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+    
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}
+
+
+
+
